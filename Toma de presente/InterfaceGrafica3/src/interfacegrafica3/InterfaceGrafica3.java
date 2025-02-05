@@ -25,7 +25,7 @@ public class InterfaceGrafica3 {
         JanelaPrincipal janelaPrincipal = new JanelaPrincipal();
         janelaPrincipal.setVisible(true);
         janelaPrincipal.setTitle("Cadastro de clientes");
-        janelaPrincipal.setSize(565,505);
+        janelaPrincipal.setSize(1000,750);
         janelaPrincipal.setLocationRelativeTo(null);
         /*
         // explicação do polimorfismo:
