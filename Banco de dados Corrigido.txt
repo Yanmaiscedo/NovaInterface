@@ -1,0 +1,47 @@
+CREATE DATABASE cadastro;
+
+USE cadastro;
+
+CREATE TABLE `cadastro`.`cadastro_pessoa` (
+  `id` INT NOT NULL AUTO_INCREMENT COMMENT '',
+  `nome` VARCHAR(100) NOT NULL COMMENT '',
+  `endereco` VARCHAR(100) NOT NULL COMMENT '',
+  `email` VARCHAR(100) NULL COMMENT '',
+  `telefone` VARCHAR(17) NULL COMMENT '',
+  PRIMARY KEY (`id`) COMMENT ''
+);
+
+CREATE TABLE `Cadastro`.`cadastro_pessoa_juridicas` (
+  `id` INT NOT NULL AUTO_INCREMENT COMMENT '',
+  `nome` VARCHAR(100) NOT NULL COMMENT '',
+  `endereco` VARCHAR(100) NOT NULL COMMENT '',
+  `email` VARCHAR(100) NULL COMMENT '',
+  `telefone` VARCHAR(17) NULL COMMENT '',
+  `cnpj` VARCHAR(18) NOT NULL COMMENT '',
+  `inscricao_estadual` VARCHAR(20) NULL COMMENT '',
+  `nome_fantasia` VARCHAR(100) NULL COMMENT '',
+  `categoria` VARCHAR(50) NULL COMMENT '',
+  `sigla` VARCHAR(2) NULL COMMENT '',
+  PRIMARY KEY (`id`) COMMENT ''
+);
+
+CREATE TABLE `cadastro`.`fornecedor` (
+  `id` INT NOT NULL AUTO_INCREMENT COMMENT '',
+  `nome` VARCHAR(100) NOT NULL COMMENT '',
+  `endereco` VARCHAR(100) NOT NULL COMMENT '',
+  `email` VARCHAR(100) NULL COMMENT '',
+  `telefone` VARCHAR(17) NULL COMMENT '',
+  `cnpj` VARCHAR(18) NOT NULL COMMENT '',
+  `inscricao_estadual` VARCHAR(20) NULL COMMENT '',
+  `nome_fantasia` VARCHAR(100) NULL COMMENT '',
+  `categoria` VARCHAR(50) NULL COMMENT '',
+  `sigla` VARCHAR(2) NULL COMMENT '',
+  PRIMARY KEY (`id`) COMMENT ''
+);
+
+CREATE TABLE `cadastro`.`uf` (
+  `id` INT NOT NULL AUTO_INCREMENT COMMENT '',
+  `nome` VARCHAR(100) NOT NULL COMMENT '',
+  `sigla` VARCHAR(2) NOT NULL COMMENT '',
+  PRIMARY KEY (`id`) COMMENT ''
+);
