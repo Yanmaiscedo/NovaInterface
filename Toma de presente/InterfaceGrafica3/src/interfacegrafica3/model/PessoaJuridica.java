@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package interfacegrafica3.model;
 
-/**
- *
- * @author Professor
- */
 public class PessoaJuridica extends Pessoa {
     private String cnpj;
     private String inscricaoEstadual;
@@ -20,6 +12,13 @@ public class PessoaJuridica extends Pessoa {
         this.cnpj = cnpj;
         this.inscricaoEstadual = inscricaoEstadual;
         this.nomeFantasia = nomeFantasia;
+    }
+
+    public PessoaJuridica() {
+        super(); 
+        this.cnpj = null;
+        this.inscricaoEstadual = null;
+        this.nomeFantasia = null;
     }
 
     public String getCnpj() {
@@ -57,7 +56,4 @@ public class PessoaJuridica extends Pessoa {
                 ", inscricaoEstadual=" + inscricaoEstadual   + 
                 ", nomeFantasia="      + nomeFantasia        + '}';
     }
-    
-    
-    
 }
